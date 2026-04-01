@@ -1,0 +1,124 @@
+/* modal overlay */
+
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.4);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 200;
+}
+
+/* modal box */
+
+.modal-content {
+    background: white;
+    padding: 30px;
+    border-radius: 14px;
+    width: 500px;
+    max-width: 90%;
+    position: relative;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+}
+
+/* close button */
+
+.modal-close {
+    position: absolute;
+    top: 12px;
+    right: 12px;
+    background: none;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+/* form */
+
+.lead-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.form-title {
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+
+.form-fields {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+}
+
+/* input group */
+
+.input-group {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.input-group label {
+    font-size: 13px;
+    color: #6b7280;
+}
+
+/* inputs */
+
+.form-input,
+.form-select {
+    padding: 10px;
+    border-radius: 8px;
+    border: 1px solid #d1d5db;
+    font-size: 14px;
+}
+
+/* button */
+
+.add-lead-button {
+    background: #6366f1;
+    color: white;
+    padding: 10px;
+    border-radius: 8px;
+    font-weight: 500;
+    margin-top: 5px;
+}
+
+/* Tablet */
+@media (max-width:1024px) {
+    .modal-content {
+        width: 450px;
+    }
+}
+
+/* Mobile */
+@media (max-width:768px) {
+
+    .modal-content {
+        width: 90%;
+        padding: 22px;
+    }
+
+    .form-title {
+        font-size: 18px;
+    }
+}
+
+/* Small Mobile */
+@media (max-width:480px) {
+
+    .modal-content {
+        padding: 18px;
+    }
+
+    .form-input,
+    .form-select {
+        font-size: 13px;
+    }
+}
